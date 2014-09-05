@@ -13,8 +13,7 @@ public class Newtestclass {
     public void setWebDriver(){
         WebDriver driver = new FirefoxDriver();
         driver.navigate().to("http://seleniumsimplified.com");
-        Assert.assertTrue("Should be different",
-                driver.getTitle().startsWith("Selenium Simplified"));
+        Assert.assertTrue("Should be different", driver.getTitle().startsWith("Selenium Simplified"));
         driver.close();
 
     }
